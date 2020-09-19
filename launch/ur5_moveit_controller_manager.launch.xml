@@ -12,7 +12,7 @@
     <rosparam file="$(find picknik_ur5_moveit_config)/config/controllers.yaml"/>
     <param name="use_controller_manager" value="false"/>
     <param name="trajectory_execution/execution_duration_monitoring" value="false"/>
-    <param name="moveit_controller_manager" value="moveit_simple_controller_manager/MoveItSimpleControllerManager"/>
+    <param name="moveit_controller_manager" value="trackjoint_simple_controller_manager/TrackjointSimpleControllerManager"/>
   </group>
 
   <include file="$(find picknik_ur5_moveit_config)/launch/$(arg hardware_controller)_driver_bringup.launch.xml" >
